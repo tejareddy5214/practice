@@ -25,7 +25,7 @@ class Main{
             for(int j=2;j<i;j++){
                 if(i%j==0)isPrime =false;
             }
-            if (isPrime) System.out.print(i+"  ");
+            if (isPrime) System.out.print(i+" iojfio ");
         }
 
         sc.close();
