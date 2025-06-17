@@ -17,7 +17,7 @@ class Main{
                 break;
             }
         }
-        
+
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         for(int i=2;i<=n;i++){
@@ -25,7 +25,7 @@ class Main{
             for(int j=2;j<i;j++){
                 if(i%j==0)isPrime =false;
             }
-            if (isPrime) System.out.print(i+" iojfio ");
+            if (isPrime) System.out.print(i+" ");
         }
 
         sc.close();
