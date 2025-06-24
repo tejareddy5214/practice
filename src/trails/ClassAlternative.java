@@ -10,9 +10,12 @@ class Simple{
 public class ClassAlternative{
     public static void main(String[] args){
         try{
-            Class c=Class.forName("trails.Formultiples");
-            Simple s=(Simple)c.newInstance();
-            out.println(s.message());
+            String str ="trails.Formultiples";
+            Class c=Class.forName(str);
+            Formultiples s = (Formultiples) c.newInstance();
+            String[] ag ={};
+//            out.println(s.main(ag));
+            s.main(ag);
         }
         catch(Exception err){
             out.println(err);
