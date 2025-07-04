@@ -10,8 +10,8 @@ public class Assessment00004 {
             x *= v;
         }
         System.out.println(x);
-//        Arrays.stream(new int[]{x})
-         IntStream.range(1,x+1).forEach(System.out::println);
+//        Arrays.stream(new int[]{x}).forEach(System.out::println);
+//         IntStream.range(1,x+1).forEach(System.out::println);
     }
 }
 //        wap to print factorial of a number

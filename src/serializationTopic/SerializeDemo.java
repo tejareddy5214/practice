@@ -1,6 +1,8 @@
 package serializationTopic;
 
-import java.io.*;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
 
 public class SerializeDemo {
 
@@ -17,29 +19,21 @@ public class SerializeDemo {
             out.writeObject(e);
             out.close();
             fileOut.close();
-            System.out.println("Serialized data is saved in /tmp/employee.ser");
-
-            FileInputStream fileInputStream = new FileInputStream("employee.ser");
-            ObjectInputStream inputStream = new ObjectInputStream(fileInputStream);
-            Employee ei = (Employee) inputStream.readObject();
-            System.out.println(ei.name);
-            System.out.println(ei.address);
-            System.out.println(ei.SSN);
-            System.out.println(ei.number);
-
+            System.out.printf("Serialized data is saved in /tmp/employee.ser");
         } catch (IOException i) {
-            System.out.println(i);
-        } catch (ClassNotFoundException ex) {
-            System.out.println(ex);
+            i.printStackTrace();
         }
     }
 }
 
 class Employee implements java.io.Serializable {
-    @Serial
     private static final long serialVersionUID = 1L;
     public String name;
     public String address;
-    public transient int SSN;   //in serialization, it will hide
+    public transient int SSN;
     public int number;
+
+    public void mailCheck() {
+        System.out.println("Mailing a check to " + name + " " + address);
+    }
 }
