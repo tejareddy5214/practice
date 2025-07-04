@@ -11,6 +11,9 @@ public class Assessment00001 {
             y=z;
             z=m;
         }
+        System.out.println();
+        Assessment00001 assessment00001 = new Assessment00001();
+        System.out.println(assessment00001.toString());
     }
 }
 //wap to print Fabinocci series.
