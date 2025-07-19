@@ -1,4 +1,4 @@
-// Java Program to demonstrate String
+package trails;// Java Program to demonstrate String
 import java.util.*;
 public class Stringreverse {
 

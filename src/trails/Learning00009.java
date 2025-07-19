@@ -1,3 +1,5 @@
+package trails;
+
 import java.util.Arrays;
 
 //import static java.util.Arrays;
