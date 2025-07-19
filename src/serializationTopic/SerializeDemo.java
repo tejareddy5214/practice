@@ -41,7 +41,7 @@ class Employee implements java.io.Serializable {
     private static final long serialVersionUID = 1L;
     public String name;
     public String address;
-    public transient int SSN;   //in serialization it will hide
+    public transient int SSN;   //in serialization, it will hide
     public int number;
 
     public void mailCheck() {
