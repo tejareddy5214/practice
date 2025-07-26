@@ -1,8 +1,6 @@
 package serializationTopic;
 
 import java.io.*;
-import java.time.DateTimeException;
-import java.util.Date;
 
 public class SerializeDemo {
 
@@ -30,21 +28,18 @@ public class SerializeDemo {
             System.out.println(ei.number);
 
         } catch (IOException i) {
-            i.printStackTrace();
+            System.out.println(i);
         } catch (ClassNotFoundException ex) {
-            throw new RuntimeException(ex);
+            System.out.println(ex);
         }
     }
 }
 
 class Employee implements java.io.Serializable {
+    @Serial
     private static final long serialVersionUID = 1L;
     public String name;
     public String address;
     public transient int SSN;   //in serialization, it will hide
     public int number;
-
-    public void mailCheck() {
-        System.out.println("Mailing a check to " + name + " " + address);
-    }
 }

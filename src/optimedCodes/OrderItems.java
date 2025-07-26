@@ -1,16 +1,12 @@
 package optimedCodes;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class OrderItems {
     public static void main(String[] args) {
         try (Scanner scanner = new Scanner(System.in)) {
             List<String> listOfItems = new ArrayList<>();
-
             while (true) {
-                System.out.println(listOfItems.toString());
                 System.out.println("\nSelect an option (Enter Number):");
                 System.out.println("1. Add Product");
                 System.out.println("2. Remove Item");
@@ -20,6 +16,7 @@ public class OrderItems {
                 int choice;
                 if (scanner.hasNextInt()) {
                     choice = scanner.nextInt();
+
                     scanner.nextLine();
                 } else {
                     System.out.println("Please enter a valid number.");
