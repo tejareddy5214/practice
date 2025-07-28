@@ -13,5 +13,6 @@ public class Duplicates {
         LocalDate localDate = LocalDate.now ();
         System.out.println (localDate.getDayOfWeek ());
         AllStreamConcepts.main (args);
+
     }
 }
