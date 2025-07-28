@@ -12,5 +12,6 @@ public class Duplicates {
         System.out.println(list);
         LocalDate localDate = LocalDate.now ();
         System.out.println (localDate.getDayOfWeek ());
+        AllStreamConcepts.main (args);
     }
 }
