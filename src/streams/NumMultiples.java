@@ -13,5 +13,6 @@ public class NumMultiples {
         list.forEach(i -> {
             list.forEach(j -> System.out.println(i + " x " + j + " = " + (i * j)));
         });
+        list.forEach(System.out::print);
     }
 }
